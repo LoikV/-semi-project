@@ -1,0 +1,623 @@
+@import 'reset.sass';
+@import 'font.sass';
+
+body
+	.wrapper
+		width: 100%
+		max-width: 1800px
+		header
+			position: relative
+			.banner
+				width: 100%
+				height: 100vh
+				position: relative
+				.showed
+					opacity: 1
+				&>div
+					width: 100%
+					height: 100%
+					position: absolute
+					top: 0
+					left: 0 
+					opacity: 0
+					transition: opacity 2s ease-in-out
+				&>div:nth-child(1)
+					background: url('./classic_car_service_19_2_0.jpg');
+					background-position: centr
+					background-size: cover
+					& div
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 2
+						background: url("pattern.png")
+						background-repeat: repeat
+				&>div:nth-child(2)
+					background: url('chevelle-960a.jpg');	
+					background-position: centr
+					background-size: cover
+					& div
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 2
+						background: url("pattern.png")
+						background-repeat: repeat
+				&>div:nth-child(3)
+					background: url('classic1_d.jpg');
+					background-position: centr
+					background-size: cover
+					& div
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 2
+						background: url("pattern.png")
+						background-repeat: repeat
+				&>div:nth-child(4)
+					background: url('BM8H1420-1500x1000_c.jpg');
+					background-position: centr
+					background-size: cover
+					& div
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 2
+						background: url("pattern.png")
+						background-repeat: repeat
+			.usual
+				display: flex
+				justify-content: space-between
+				align-items: center
+				box-sizing: border-box
+				width: 100%
+				height: 100px
+				padding: 0 50px
+				background: rgba(38,41,50, .9)
+				position: absolute
+				bottom: 0
+				z-index: 10
+				transition: height .5s ease-in-out
+				h2
+					display: block
+					font-family: "logo"
+					font-size: 3em
+					color: #beb8b8
+					text-shadow: 5px 5px #000
+					span
+						//font-weight: bold
+						margin-right: 10px
+						color: #f2f2f2
+				ul
+					display: flex
+					width: 66%
+					float: right
+					justify-content: space-between
+					font-family: "menu2"
+					letter-spacing: 2px
+					font-size: .8em
+					color: #beb8b8
+					li
+						display: block
+						text-transform: uppercase
+						position: relative
+						a
+							transition: color .4s ease-in-out
+							position: relative
+						a:hover
+							color: #7b7540
+						a:after
+							position: absolute
+							background-color: #7b7540
+							display: block
+							content: ""
+							height: 2px
+							width: 0%
+							left: 48%
+							transition: width .4s cubic-bezier(0, 0, 0.27, 0.99)
+							transform: translateX(-50%)
+						a:hover:after,
+						a:focus:after
+							width: 100%
+			.attached 
+				position: fixed
+				top: 0px
+				left: 0px
+				height: 80px
+				transition: height .5s ease-in-out
+
+		main
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			width: 100%
+			// height: 100vh
+			// background: #eee
+			.services_wrap
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				width: 100%
+				background: #eee
+				.services 
+					width: 100%
+					max-width: 960px
+					// height: 100%
+					padding: 100px 0
+					color: #8c8c8c
+					background: #eee
+					font-family: "headers"
+					// font-size: 15px
+					
+					h2
+						//color: #8c8c8c
+						//font-family: "headers"
+						font-size: 4.5em
+						line-height: 100px
+					h5
+						font-size: 1.5em
+						line-height: 50px
+					.services_wrap_1
+						font-size: 15px
+						font-family: "Abel"
+						div
+							padding: 20px 0
+						.you_will_find
+							& :first-child
+								color: #333232
+								font-family: "headers2"
+								line-height: 25px
+							// &+p
+								
+							// 	line-height: 35px
+						p
+							span
+								text-transform: uppercase
+						.services_works
+							display: flex
+							justify-content: space-around
+							p
+								line-height: 20px
+								width: 20%
+					.services_wrap_2
+						h5
+							font-size: 1.5em
+							line-height: 50px
+							padding: 20px 0
+						.services_equipment
+							display: flex
+							justify-content: space-around
+							font-size: 15px
+							font-family: "Abel"
+							p
+								width: 20%
+								line-height: 20px
+			.empty_1
+				position: relative
+				height: 400px
+				width: 100%
+				.mask_1
+					width: 100%
+					height: 100%
+					background: url("pattern.png")
+					//background-size: cover
+					background-repeat: repeat
+					.paralax_1
+						height: 100vh
+						width: 100%
+						position: absolute
+						bottom: 200px
+						left: 0
+						background: url("./straight-steer-garage-1-1.jpg")
+						background-position: left
+						background-size: cover
+						z-index: -1
+			.about_us_wrap
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				width: 100%
+				background: #eee
+				.about_us
+					// height: 100vh
+					width: 100%
+					max-width: 960px
+						// height: 100%
+					padding: 50px 0
+					background: #eee
+					color: #8c8c8c
+					font-family: "headers"
+					h2
+						// color: #8c8c8c
+						font-size: 4.5em
+						line-height: 100px
+					p
+						font-size: 15px
+						font-family: "Abel"
+						line-height: 20px
+			.our_team_wrap
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				width: 100%
+				background: #eee
+				.our_team
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+					width: 100%
+					max-width: 960px
+						// height: 100%
+					padding: 50px 0
+					background: #eee
+					color: #8c8c8c
+					font-family: "headers"
+					.item
+						width: 225px
+						height: 280px
+						background: red
+						display: inline-block
+						margin: 30px
+						position: relative
+						overflow: hidden
+						&>img
+							position: absolute
+					// .item_1
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_2
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_3
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_4
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_5
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_6
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+					// .item_7
+					// 	background: url('./worker_test.jpg')
+					// 	// background-position: centr
+					// 	background-size: cover
+
+					.el
+						// position: absolute
+						background: #fff
+						position: absolute
+						width: 100%
+						height: 100%
+						margin-top: 205px
+						transition: all 1s cubic-bezier(0, 0, 0, 1.06)
+						font-family: "Abel"
+						display: flex
+						justify-content: center
+						flex-wrap: wrap
+						align-content: space-between
+						// line-height: 75px
+						// &:hover
+						// 	margin-top: 0
+						// .person_info_wrap
+						// 	height: 75px
+						// 	width: 100%
+						&>*
+							text-align: center
+							// width: 100%
+						.el_wrap
+							display: flex
+							flex-wrap: wrap
+							justify-content: center
+							.person_info_wrap
+								display: flex
+								flex-wrap: wrap
+								align-items: center
+								align-content: center
+								height: 75px
+								h5
+									font-size: 22px
+									color: #262932
+									font-weight: bold
+									width: 100%
+								p
+									width: 100%
+									font-size: 15px
+									color: #A1A1A1
+									padding-top: 5px
+						.email
+							font-size: 15px
+							color: #000
+							padding-bottom: 50px
+						
+							// p:nth-child(3)
+							
+						
+						// p
+						// 	text-align: center
+							//
+
+
+			.studios_wrap
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				width: 100%
+				background: #eee
+				margin-bottom: 50px
+				.studios
+					// height: 100vh
+					width: 100%
+					max-width: 960px
+						// height: 100%
+					padding: 50px 0
+					background: #eee
+					color: #8c8c8c
+					font-family: "headers"
+					h2
+						// color: #8c8c8c
+						font-size: 4.5em
+						line-height: 100px
+					p
+						font-size: 15px
+						font-family: "Abel"
+						line-height: 20px
+					.studios_photo
+						background: #433737
+						display: grid
+						grid-template-columns: repeat(4, 1fr)
+						grid-auto-rows: 225px
+						grid-gap: 1px
+
+						div
+							background: #000
+
+			.projecte_wrap
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				width: 100%
+				background: #eee
+				
+				.projecte_header
+					background: #262932
+					width: 100%
+
+					.projecte_header_container
+						display: flex
+						justify-content: space-between
+						width: 100%
+						max-width: 960px
+						margin: 0 auto
+						padding: 100px 0
+						color: #8c8c8c
+						font-family: "headers"
+						h2
+							color: #fff
+							font-size: 4.5em
+							line-height: 100px
+						nav
+							display: flex
+							align-items: center
+							ul
+
+								li
+									display: inline-block
+									a
+										padding: 10px 30px
+										font-family: "Abel"
+										font-size: 1.2em
+										background: #363942
+				.project_content
+			  	//height: 100vh
+			 		width: 100%
+			 		padding: 25px 0
+			 		display: flex
+			 		flex-wrap: wrap
+			 		justify-content: center
+			 		//background: #eee
+			 		&>*
+			 			// align: center
+			 			width: 200px
+			 			height: 200px
+			 			border: 2px solid #000
+			 			transition: all 1.5s cubic-bezier(.16,.85,.45,1)
+			 		.poject_item_1
+			 			position: absolute
+			 		.invisible
+			 			// transform: scale(0)
+			 			width: 0
+			 			height: 0
+			 		.visible
+			 		  transform: scale(1)
+			 		.painting
+			 			background: red
+			 		.engine
+			 			background: blue
+			 		.suspension
+			 			background: yellow
+			.empty_2
+							position: relative
+							height: 400px
+							width: 100%
+							.mask_2
+								height: 100%
+								// height: 100%
+								background: url("pattern.png")
+								//background-size: cover
+								background-repeat: repeat
+								.logo_partners
+									max-width: 700px
+									margin: 0 auto
+									display: flex
+									flex-wrap: wrap
+									& > img
+										padding: 0 25px
+								.paralax_2
+									height: 100vh
+									width: 100%
+									position: absolute
+									bottom: 200px
+									left: 0
+									background: url("./straight-steer-garage-1-1.jpg")
+									background-position: left
+									background-size: cover
+									z-index: -1
+			#map
+				height: 70vh
+				width: 100%
+				background: #eee
+			.empty_3
+							position: relative
+							height: 400px
+							width: 100%
+							.mask_3
+								height: 100%
+								// height: 100%
+								background: url("pattern.png")
+								//background-size: cover
+								background-repeat: repeat
+								.paralax_3
+									height: 100vh
+									width: 100%
+									position: absolute
+									bottom: 200px
+									left: 0
+									background: url("./straight-steer-garage-1-1.jpg")
+									background-position: left
+									background-size: cover
+									z-index: -1
+		footer
+			height: 200px
+			width: 100%
+			background: #262932
+			.line
+				display: block
+				width: 90%
+				height: 2px
+				border-bottom: 1px solid #fff
+				margin: 0 auto
+			.contacts
+				padding-top: 50px
+				padding-bottom: 25px
+				font-size: 30px
+				font-family: "Arial"
+				font-weight: 600
+				color: #fff
+				display: flex
+				justify-content: space-around
+				// &:after
+				// 	content: ""
+				// 	display: block
+				// 	width: 80%
+				// 	height: 1px
+				// 	color: #fff
+
+				.email
+					a
+						color: inherit
+						&:before
+							display: block
+							height: 30px 
+							width: 30px
+							content: ""
+							float: left
+							background: url("./icon/icons8-сообщение-32.png")
+							background-repeat: no-repeat
+							background-size: cover
+					
+				.phone
+				.phone:before
+					display: block
+					height: 40px 
+					width: 40px
+					content: ""
+					float: left
+					background: url("./icon/icons8-телефон-50.png")
+					background-repeat: no-repeat
+					background-size: cover
+	.show_photo_wrap
+		display: none
+		position: fixed
+		z-index: 3
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		.show_photo
+			// width: 72vw
+			// height: 72vh
+			// max-width: 800px
+			// min-width: 750px
+			// min-height: 455px
+			display: flex
+			margin: auto
+			background-color: #fff
+			// position: fixed
+			border: 1px solid #3b3d46
+			// display: none
+			// overflow-y: scroll
+			text-align: center
+			z-index: 3
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			animation: showform .3s 1 linear  normal
+			//max-height: 500px
+			.first
+				height: 72vh
+			.close
+				font-size: 18px
+				position: absolute
+				color: rgb(209, 196, 143)
+				opacity: .7
+				right: 10px
+				top: 10px
+				cursor: pointer
+		.mask
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			display: none
+			background-color: #000
+			z-index: 2
+			opacity: .7
+
+@keyframes showform
+	0% 
+		opacity: .1
+		
+		
+	100% 
+		opacity: 1
+
+
+							
+							
+							
+
+						
+
+					
+
+
+
+
+
+
+
+							
+
+
+						
