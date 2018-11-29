@@ -102,21 +102,21 @@ window.onload = function() {
 //to animate videos
 for(let i = 0; i < project_menu.children.length; i++ ) {
 	project_menu.children[i].addEventListener("click", function() {
-		for(let i = 0; i < project_content.children.length; i++ ){
-			project_content.children[i].classList.remove("invisible");
-		}
-		if(project_menu.children[i].className != "all_btn") {
-			var a = 1;
-			project_content.children.filter = [].filter;
-			const	newAar = project_content.children.filter(elem => {
-				return (elem.className.substring(0, elem.className.indexOf(" ")) != this.className.substring(0, this.className.indexOf("_"))) ? elem.className[0] : null
- 				var a = 1;
-				var b = 2;
-		});
-			for(let i = 0; i < newAar.length; i++ ){
-				newAar[i].classList.add("invisible");
-			}
-		}
+		// for(let i = 0; i < project_content.children.length; i++ ){
+		// 	project_content.children[i].classList.remove("invisible");
+		// }
+		// if(project_menu.children[i].className != "all_btn") {
+		// 	var a = 1;
+		// 	project_content.children.filter = [].filter;
+		// 	const	newAar = project_content.children.filter(elem => {
+		// 		return (elem.className.substring(0, elem.className.indexOf(" ")) != this.className.substring(0, this.className.indexOf("_"))) ? elem.className[0] : null
+ 	// 			var a = 1;
+		// 		var b = 2;
+		// });
+		// 	for(let i = 0; i < newAar.length; i++ ){
+		// 		newAar[i].classList.add("invisible");
+		// 	}
+		// }
 	});
 }
 
