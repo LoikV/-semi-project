@@ -17,7 +17,6 @@ import './studios_photo/servis-mobil-honda-solo-baru.jpg'
 // loder.png
 // motul.png
 window.onload = function() {
-
 	const imageCng = document.querySelectorAll(".banner>div");
 	const mask_1 = document.querySelector(".mask_1");
 	const paralax_1 = document.querySelector(".paralax_1 ");
@@ -39,15 +38,6 @@ window.onload = function() {
 	const photo = document.querySelector(".studios_photo");
 	const mask = document.querySelector(".mask");
 	const show_photo_wrap = document.querySelector(".show_photo_wrap");
-// 	clientHeight
-// :
-// 100
-	// window.onscroll = function () {
-	// 	const pos21 = navv.getBoundingClientRect().top
-	// 	if(pos21 == 0){
-	// 		alert(1)
-	// 	}
-	// }
 
 	var i = 0;
 	//for( let i = 0; i < imageCng.length; i++ ) {
@@ -99,28 +89,25 @@ window.onload = function() {
 			});
 	};
 
-//to animate videos
-for(let i = 0; i < project_menu.children.length; i++ ) {
-	project_menu.children[i].addEventListener("click", function() {
-		// for(let i = 0; i < project_content.children.length; i++ ){
-		// 	project_content.children[i].classList.remove("invisible");
-		// }
-		// if(project_menu.children[i].className != "all_btn") {
-		// 	var a = 1;
-		// 	project_content.children.filter = [].filter;
-		// 	const	newAar = project_content.children.filter(elem => {
-		// 		return (elem.className.substring(0, elem.className.indexOf(" ")) != this.className.substring(0, this.className.indexOf("_"))) ? elem.className[0] : null
- 	// 			var a = 1;
-		// 		var b = 2;
-		// });
-		// 	for(let i = 0; i < newAar.length; i++ ){
-		// 		newAar[i].classList.add("invisible");
-		// 	}
-		// }
-	});
-}
+	//to animate videos
+	for(let i=0;i<project_menu.children.length;i++){
+		project_menu.children[i].addEventListener("click", function(e) {
+			// const targetClass=e.currentTarget.className;
+			// for(let y of project_content.children){
+			// 	y.classList.toggle('invisible');
+			// 	setTimeout(()=>{
+			// 		y.style.display='';
+			// 		if(y.getAttribute('data-category')!=targetClass){
+			// 			y.style.display='none';
+			// 		};
+			// 		y.classList.toggle('invisible');
+			// 	},500);
+			// };
+		});
+	};
+};
 
-}
+
 function show() {
 	show_photo_wrap.style.display = "flex"
 	mask.style.display = "block"
